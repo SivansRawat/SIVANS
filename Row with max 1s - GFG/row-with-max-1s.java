@@ -55,6 +55,8 @@ class Solution {
 
             else{
                 i++;
+                j = m-1;
+                
             }
 
         }

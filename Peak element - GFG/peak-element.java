@@ -1,6 +1,4 @@
 //{ Driver Code Starts
-
-
 import java.util.*;
 import java.io.*;
 class PeakElement{
@@ -53,8 +51,8 @@ class Solution
 	// n: size of array a[]
 	public int peakElement(int[] arr,int n)
     {
-        
-       int s =0;
+       //add code here.
+        int s =0;
 
        int e = n-1;
 
@@ -81,4 +79,4 @@ class Solution
        return mid;
 
     }
-    }
+}

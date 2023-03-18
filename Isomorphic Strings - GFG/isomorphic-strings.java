@@ -38,6 +38,7 @@ class Solution
     public static boolean areIsomorphic(String str1,String str2)
     {
         // Your code here
+        
         int n = str1.length();
         int m  = str2.length();
         
@@ -78,8 +79,6 @@ class Solution
         
         
         return true;
-        
-        
         
     }
 }

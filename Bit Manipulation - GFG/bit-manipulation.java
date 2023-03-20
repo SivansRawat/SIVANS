@@ -29,9 +29,14 @@ class Solution {
     static void bitManipulation(int num, int i) {
         // code here
         
-        int get = (num & (1<<(i-1)))>> (i-1);
-        int set = num | (1<<(i-1));
-        int clear = num & ~(1<<(i-1));
+        
+        // take reference from  Bit Masking
+        
+        int get = (num & (1<<(i-1)))>> (i-1); //  first find mask and then AND it with original number
+        
+        int set = num | (1<<(i-1)); // first find mask and then use OR operator with number
+        
+        int clear = num & ~(1<<(i-1)); // first find mask and the XOR it and then use AND operator with original number 
         
         System.out.print(get+" "+set+" " + clear);
         

@@ -35,22 +35,7 @@ class Solution {
         // To count occurrences of Every character in the String 
         
         HashMap<Character,Integer> map = new HashMap<>();
-        
-        // char[] chr_array = pat.toCharArray();
-        
-        // for(char c : chr_array){
-        //     if(map.containskey(c)){
-        //         map.put(c,map.get(c)+1);
-                
-        //     }
-            
-        //     else{
-        //         map.put(c,1);
-        //     }
-        // }
-        
-        
-        
+      
         for(int i=0;i<pat.length();i++){
             if(map.containsKey(pat.charAt(i))){
                 map.put(pat.charAt(i) , map.get(pat.charAt(i))+1);
@@ -113,25 +98,11 @@ class Solution {
                 i++;
                 j++;
                 
-                // if(map.containskey(txt.charAt(j))){
-                // map.put(txt.charAt(j),map.get(txt.charAt(j))+1);
-                
-                // }
+   
             
-                // else{
-                //     map.put(txt.charAt(j),1);
-                // }
-            }
-            
-            
-            
-            
-           
-            
-            
-
-            
-            
+        }
+        
+        
         }
         
         return ans;

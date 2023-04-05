@@ -67,6 +67,7 @@ class Solution
         ArrayDeque<Integer> deq = new ArrayDeque<>();
 
         while(j<n){
+            
             while(!deq.isEmpty() && arr[j] > deq.peekLast()){
                 deq.removeLast();
             }

@@ -29,7 +29,7 @@ class Solution{
     String longestCommonPrefix(String arr[], int n){
         // code here
         
-        String firststr=arr[0];
+       String firststr=arr[0]; // getting the first element of the array 
 
        for(int i=1;i<arr.length;i++){
 

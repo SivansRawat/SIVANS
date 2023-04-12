@@ -35,9 +35,6 @@ class Solution
         // code here
         
         int curSum =0;
-        int start = 0;
-        int end = -1;
-        int max =0; 
         int count = 0 ;
         
         

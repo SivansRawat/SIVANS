@@ -80,7 +80,9 @@ class Solution
                 j++;
 
             }
-
+            
+            
+            // WHEN WINDOW IS STRUCK 
 
             else if(j-i+1 == k){
                 arr_f.add(deq.peekFirst());
@@ -88,7 +90,8 @@ class Solution
                 if(deq.peek()==arr[i]){
                     deq.removeFirst();
                 }
-
+                
+                // SLIDING THE WINDOW 
                 i++;
                 j++;
             }

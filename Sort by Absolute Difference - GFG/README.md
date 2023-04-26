@@ -27,7 +27,7 @@ elements as 5 4 3 2 1.</span></pre>
 <span style="font-size:18px">This is a functional problem. You only need to complete the function <strong>sortABS()</strong>. The <strong>printing </strong>is done automatically by the <strong>driver code</strong>.<br>
 <br>
 <strong>Expected Time Complexity:</strong>&nbsp;O(N log(N) ).<br>
-<strong>Expected Auxiliary Space:</strong>&nbsp;O(N).</span><br>
+<strong>Expected Auxiliary Space:</strong>&nbsp;O(1).</span><br>
 <br>
 <span style="font-size:18px"><strong>Constraints:</strong><br>
 1 &lt;= N &lt;= 10<sup>5</sup><br>

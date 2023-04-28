@@ -47,9 +47,7 @@ class Solution
         int[] left = new int[(int) n];
         int[] right = new int[(int) n];
         
-        int pseudoindex = -1;
         
-        // int count = n-1;
         Stack<Pair> stk = new Stack<>();
         
         // for(int i=0;i<n;i++){

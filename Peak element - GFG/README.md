@@ -21,13 +21,13 @@ If 2 is returned then the generated output will be 1 else 0.</span>
 <p><strong><span style="font-size:18px">Example 2:</span></strong></p>
 
 <pre><strong><span style="font-size:18px">Input:
-</span></strong><span style="font-size:18px">N = 2
-arr[] = {3,4}
+</span></strong><span style="font-size:18px">N = 3
+arr[] = {3,4,2}
 </span><strong><span style="font-size:18px">Possible Answer: </span></strong><span style="font-size:18px">1
 <strong>Output: </strong>1<strong>
 Explanation: </strong>4 (at index 1) is the 
 peak element as it is greater than 
-its only neighbour element 3.
+it's neighbor elements 3 and 2.
 </span><span style="font-size:18px">If 1 is returned then the generated output will be 1 else 0.</span>
 </pre>
 

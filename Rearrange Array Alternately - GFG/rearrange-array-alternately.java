@@ -66,11 +66,9 @@ class Solution{
             return;
         }
         while(start <= end){
-            arrl[i] = arr[end];
-            i++;
+            arrl[i++] = arr[end];
             if(i<n)
-            arrl[i] = arr[start];
-            i++;
+            arrl[i++] = arr[start];
             start++;
             end--;
         }

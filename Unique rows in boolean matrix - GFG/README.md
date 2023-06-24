@@ -16,7 +16,7 @@ The two unique rows are R<sub>1</sub>: {1 1 0 1} and R<sub>2</sub>: {1 0 0 1}. <
 <pre><strong>Input:
 </strong>row = 2, col = 4 
 M[][] = {{0 0 0 1}, {0 0 0 1}}
-<strong>Output: </strong>{{0 0 0 1}}<strong>
+<strong>Output: $</strong>0 0 0 1 $<strong>
 Explanation: </strong>Above the matrix of size 3x4
 looks like
 0 0 0 1

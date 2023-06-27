@@ -29,9 +29,17 @@ class Solution
      long floorSqrt(long x)
 	 {
 		// Your code here
-		int sqr = (int)Math.sqrt(x);
-        int result = (int)(sqr);
-        return (long)result;
+		
+		int start = 1;
+        int end = (int)x;
+        while(start <= end)
+        {
+            int mid = start + (end-start)/2;
+            if(Math.pow(mid,2) == (int)x) return mid;
+            else if(Math.pow(mid,2) > (int)x ) end = mid-1;
+            else start = mid+1;
+         }
+         return (long)start-1;
 		
 		
 	 }

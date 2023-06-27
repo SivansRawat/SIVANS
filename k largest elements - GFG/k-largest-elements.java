@@ -34,15 +34,15 @@ class Solution {
     int[] kLargest(int[] arr, int n, int k) {
     
     
-    PriorityQueue<Integer> mini = new PriorityQueue<>(k);
+    PriorityQueue<Integer> pq = new PriorityQueue<>(k);
         
         for (int i = 0; i < n; i++) {
-            if (mini.size() < k)
-                mini.offer(arr[i]);
+            if (pq.size() < k)
+                pq.offer(arr[i]);
             else {
-                if (arr[i] > mini.peek()) {
-                    mini.poll();
-                    mini.offer(arr[i]);
+                if (arr[i] > pq.peek()) {
+                    pq.poll();
+                    pq.offer(arr[i]);
                 }
             }
         }
@@ -53,7 +53,7 @@ class Solution {
         for (int i = k - 1; i >= 0; i--) {
             
             
-            ans[i] = mini.poll();        }
+            ans[i] = pq.poll();        }
         
         return ans;
     

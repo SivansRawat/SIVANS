@@ -15,10 +15,10 @@ class GFG {
         {
             StringTokenizer stt = new StringTokenizer(br.readLine());
             
-            long n = Long.parseLong(stt.nextToken());
+            int n = Integer.parseInt(stt.nextToken());
             long k = Long.parseLong(stt.nextToken());
             
-            long a[] = new long[(int)(n)];
+            long a[] = new long[n];
             String inputLine[] = br.readLine().trim().split(" ");
             for (int i = 0; i < n; i++) {
                 a[i] = Long.parseLong(inputLine[i]);
@@ -40,11 +40,10 @@ class GFG {
 
 class Solution {
     
-    public int countSubArrayProductLessThanK(long a[], long n, long k)
+    public int countSubArrayProductLessThanK(long a[], int n, long k)
     {
-     
-     
-    long count  = 0;
+        
+         long count  = 0;
     
     long prod = 1;
     
@@ -67,12 +66,14 @@ class Solution {
            
         }
         
+        
+        // most important part of the question to increase the value of count 
+        
         count += j-i+1;
         
         j++;
     }
     
     return  (int)count;
-        
     }
 }

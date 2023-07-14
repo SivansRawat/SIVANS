@@ -61,8 +61,10 @@ class GFG {
 
 class Solution {
     public static int longestOnes(int n, int[] nums, int k) {
+        // code here
         
-          int max=0;
+        
+         int max=0;
 
         int start=0;
 
@@ -108,5 +110,6 @@ class Solution {
         return max;
         
     }
+    
 }
         

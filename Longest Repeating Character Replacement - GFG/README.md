@@ -6,7 +6,7 @@ Return the length of the <strong>longest substring</strong> containing same lett
 
 <p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
-<div style="--darkreader-inline-bgcolor:#1e1f21; --darkreader-inline-bgimage: initial; --darkreader-inline-border-bottom:#3b4143; --darkreader-inline-border-left:#3b4143; --darkreader-inline-border-right:#3b4143; --darkreader-inline-border-top:#3b4143; background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px;" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""><span style="font-size:18px"><strong>Input : </strong><br>
+<div style="--darkreader-inline-bgcolor: #1e1f21; --darkreader-inline-bgimage: initial; --darkreader-inline-border-bottom: #3b4143; --darkreader-inline-border-left: #3b4143; --darkreader-inline-border-right: #3b4143; --darkreader-inline-border-top: #3b4143; background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px;" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""><span style="font-size:18px"><strong>Input : </strong><br>
 S = "ABBA"<br>
 K = 2<br>
 <strong>Output:</strong>&nbsp;4<br>
@@ -14,7 +14,7 @@ K = 2<br>
 
 <p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
 
-<div style="--darkreader-inline-bgcolor:#1e1f21; --darkreader-inline-bgimage: initial; --darkreader-inline-border-bottom:#3b4143; --darkreader-inline-border-left:#3b4143; --darkreader-inline-border-right:#3b4143; --darkreader-inline-border-top:#3b4143; background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px;" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""><span style="font-size:18px"><strong>Input :</strong><br>
+<div style="--darkreader-inline-bgcolor: #1e1f21; --darkreader-inline-bgimage: initial; --darkreader-inline-border-bottom: #3b4143; --darkreader-inline-border-left: #3b4143; --darkreader-inline-border-right: #3b4143; --darkreader-inline-border-top: #3b4143; background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px;" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""><span style="font-size:18px"><strong>Input :</strong><br>
 S = "AABAABB"<br>
 k = 2<br>
 <strong>Output:</strong>&nbsp;6<br>

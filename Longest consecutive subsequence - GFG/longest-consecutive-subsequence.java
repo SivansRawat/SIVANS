@@ -68,14 +68,25 @@ class Solution
 	{
 	   // add your code here
 	   
+	   
 	   int[] arr2 = new int[1000001];
 	   int count=0;
 	   int maximum=-1;
 	   int max=Integer.MIN_VALUE;
+	   
 	   for(int i=0;i<N;i++) {
-	       arr2[arr[i]]++;
+	       arr2[arr[i]]++;   
 	       maximum=Math.max(maximum, arr[i]);
 	   }
+	   
+	   // for arr[] = {2,6,1,9,4,5,3}
+	   // arr2[] = {0,1,1,1,1,1,1,0,0,1} 
+	   // arr2 contains the frequency of every element the indexes of the element are the numbers itself 
+	   
+	   // so we just have to count the number of consecutive ones to get consecutive numbers 
+	   
+	   // V imp method 
+	   
 	   for(int i=0;i<=maximum;i++) {
 	       if (arr2[i]>=1) {
 	           count++;
@@ -87,5 +98,8 @@ class Solution
 	        max = Math.max(max, count);
 	   }
 	   return max;
+	   
+	   
 	}
+	
 }

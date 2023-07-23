@@ -16,12 +16,14 @@
 class Solution {
      private List<Integer> ans = new ArrayList<>();
     public List<Integer> inorderTraversal(TreeNode root) {
-              if(root==null) {
+        
+        // Inorder means left root right 
+       if(root==null) {
             return ans;
         }
-        inorderTraversal(root.left);
-        ans.add(root.val);
-        inorderTraversal(root.right);
+        inorderTraversal(root.left); // left    recursion
+        ans.add(root.val);   // root 
+        inorderTraversal(root.right);  // right   recursion 
         return ans;
         
     }

@@ -1,6 +1,8 @@
 //{ Driver Code Starts
 import java.io.*;
 
+import java.util.*;
+
 class Main {
     
 	public static void main (String[] args) throws IOException {
@@ -38,8 +40,8 @@ class Solution{
         
         // Your code here
         
-        int sum =0 ;
-        int max = arr[0];
+        long sum =0 ;
+        long max = arr[0];
         
         for(int  i=0 ; i<n;i++){
             
@@ -58,12 +60,6 @@ class Solution{
         
         
         return (long)max;
-        
-        
-        
-        
-        
-        
         
     }
     

@@ -13,93 +13,26 @@ import java.util.*;
 
 class GFG
 {
-    ArrayList<Long> find(long arr[], int n, int x)
+    ArrayList<Integer> find(int arr[], int n, int x)
     {
         // code here
-        
-        int start = 0;
-        int end = n-1;
-        // int count =0 ;
-        long first = -1;
-        // long fina = -1;
-        ArrayList<Long> arrList = new ArrayList<>();
-        
-        while(start<=end){
-            
-            int mid = (start+end)/2;
-            
-            if(arr[mid] == (long)x ){
-                first = mid;
-                end = mid-1;
+        ArrayList<Integer> list = new ArrayList<>();
+        int left = 0, right = n-1;
+        list.add(-1);
+        list.add(-1);
+             
+        while(left <= right) {
+            if(arr[left] == x && arr[right] == x) {
+                list.add(0,left);
+                list.add(1,right);
+                break;
             }
+            if(arr[left] != x ) left++;
             
-            // if((arr[mid]== x){
-                
-            //     fina = (long)mid;
-            // }
-            
-            else if(arr[mid] > (long)x){
-                end = mid-1;
-            }
-            
-            
-            else{
-                
-                start = mid+1;
-            }
-        }
-        
-        
-        
-        start =0 ;
-        end = n-1;
-        
-        int last  = -1;
-        
-        
-         while(start<=end){
-            
-            int mid = (start+end)/2;
-            
-            if(arr[mid] == (long)x ){
-                last = mid;
-                start= mid+1;
-            }
-            
-            // if((arr[mid]== x){
-                
-            //     fina = (long)mid;
-            // }
-            
-            else if(arr[mid] > (long)x){
-                end = mid-1;
-            }
-            
-            
-            else{
-                
-                start = mid+1;
-            }
-        }
-        
-        
-        ArrayList<Long>ans = new ArrayList<Long>();
-
-        ans.add((long)first);
-
-        ans.add((long)last);
-
-        
-
-        return ans ;
-        
-        
-        
-        
-        
-        // return arrList;
-        
-    }
+            if(arr[right] != x ) right--;
+         }
+        return list;
+}
 }
 
 
@@ -125,12 +58,12 @@ class Array {
 //            //int y =Integer.parseInt(q[2]);
             String line1 = br.readLine();
             String[] a1 = line1.trim().split("\\s+");
-            long arr[] = new long[n];
+            int arr[] = new int[n];
             for (int i = 0; i < n; i++) {
-                arr[i] = Long.parseLong(a1[i]);
+                arr[i] = Integer.parseInt(a1[i]);
             }
             GFG ob = new GFG();
-            ArrayList<Long> ans=ob.find(arr,n,x);
+            ArrayList<Integer> ans=ob.find(arr,n,x);
             System.out.println(ans.get(0)+" "+ans.get(1));
         }
     }
